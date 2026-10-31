@@ -113,8 +113,8 @@ function App() {
       setClipping(true);
       setError(null);
       await addSource(notebookId, clipRequest);
-      setSuccess(`Successfully added to notebook!`);
-      setTimeout(() => setSuccess(null), 3000);
+      setSuccess(`Successfully added to notebook! 📚`);
+      setTimeout(() => setSuccess(null), 8000);
     } catch (err) {
       if (err instanceof NotebookLMError && err.code === 'NOT_SIGNED_IN') {
         setError('Please sign in to NotebookLM first');
@@ -169,9 +169,20 @@ function App() {
         </div>
       )}
       {success && (
-        <div className="p-3 bg-green-50 border-b border-green-200 flex items-start gap-2">
-          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-          <div className="text-sm text-green-700">{success}</div>
+        <div className="p-3 bg-green-50 border-b border-green-200">
+          <div className="flex items-start gap-2 mb-2">
+            <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+            <div className="text-sm text-green-700">{success}</div>
+          </div>
+          <a
+            href="https://www.driveio.io/?referrer=SourceDrop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1"
+          >
+            <span>Need to copy Google Drive folders?</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
         </div>
       )}
 
