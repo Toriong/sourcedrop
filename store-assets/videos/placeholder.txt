@@ -1,0 +1,8 @@
+Placeholder for Chrome Web Store demo videos.
+
+Required videos (MP4, 30-60 seconds each):
+1. recording_demo-clipping-page.mp4
+2. recording_demo-youtube-to-notebook.mp4
+3. recording_demo-export-artifact.mp4
+
+See store-assets/README.md for detailed requirements.

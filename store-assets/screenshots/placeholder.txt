@@ -1,0 +1,10 @@
+Placeholder for Chrome Web Store screenshots.
+
+Required screenshots (1280x800 pixels):
+1. screenshot-1-side-panel.png
+2. screenshot-2-youtube.png  
+3. screenshot-3-ai-chats.png
+4. screenshot-4-export.png
+5. screenshot-5-onboarding.png
+
+See store-assets/README.md for detailed requirements.
